@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ecole.css">
+    <title>Ecole</title>
+
+    <!-- Style CSS -->
+
+    <style>
+        h1 {
+            animation: animate 2s linear;
+        }
+        @keyframes fadeInUp {
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+        #equipe {
+            margin-bottom: -10%;
+        }
+    </style>
+
+    <!-- Police d'écriture -->
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Noto+Sans+HK:wght@100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+HK:wght@100..900&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1><span>[nom de</span> l'école]</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="ecole.html">Acceuil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Agenda -->
+    <section id="agenda">
+        <h1>Evénements périscolaire</h1>
+        <div id="attention">
+            <div id="attention_left">
+                <h2>ATTENTION !</h2>
+                <p>Les informations disponibles sur ce site peuvent être incorrectes ou manquantes en raison de divers facteurs (météo, directives gouvernemental, grève...).<br>Il est donc important de demander au personnel de l'école ou de se rendre sur le site de la ville pour vérifier toutes informations.</p>
+                <p>Ce site <span>ne se substitue en aucun cas</span> au site de la ville, où vous trouverez toutes les informations officielles concernant les écoles de Saint Martin d'Hères.</p>
+                <button><a href="https://www.saintmartindheres.fr"> Saint Martin d'Hères</a></button>
+            </div>
+            <div id="attention_right">
+                <img src="attention.png" width="50%">
+            </div>
+        </div>
+
+        <div id="cite">
+        <hr width="100%" color="black">
+        <p class="citation">"Ce que tu penses, tu le deviens, ce que tu ressens tu l'attires, ce que tu imagines tu le crées"</p>
+        <hr width="100%" color="black">
+        </div>
+
+        <div id="events">
+            <div id="event">
+                <h2>[Projet 1]</h2>
+                <p id="date">[date]</p>
+                <p>Cursus vitae congue mauris rhoncus aenean vel elit scelerisque.</p>
+                <hr width="75%" color="black">
+                <h4>A prévoir</h4>
+                <ul class="prevoir">
+                    <li>Objet 1</li>
+                    <li>Objet 2</li>
+                    <li>Objet 3</li>
+                    <li>Objet 4</li>
+                </ul>
+            </div>
+            <div id="event">
+                <h2>[Projet 2]</h2>
+                <p id="date">[date]</p>
+                <p>Cursus vitae congue mauris rhoncus aenean vel elit scelerisque.</p>
+                <hr width="75%" color="black">
+                <h4>A prévoir</h4>
+                <ul class="prevoir">
+                    <li>Objet 1</li>
+                    <li>Objet 2</li>
+                    <li>Objet 3</li>
+                    <li>Objet 4</li>
+                </ul>
+            </div>
+            <div id="event">
+                <h2>[Projet 3]</h2>
+                <p id="date">[date]</p>
+                <p>Cursus vitae congue mauris rhoncus aenean vel elit scelerisque.</p>                
+                <hr width="75%" color="black">
+                <h4>A prévoir</h4>
+                <ul class="prevoir">
+                    <li>Objet 1</li>
+                    <li>Objet 2</li>
+                    <li>Objet 3</li>
+                    <li>Objet 4</li>
+                </ul>
+            </div>
+            <div id="event">
+                <h2>[Projet 4]</h2>
+                <p id="date">[date]</p>
+                <p>Cursus vitae congue mauris rhoncus aenean vel elit scelerisque.</p>
+                <hr width="75%" color="black">
+                <h4>A prévoir</h4>
+                <ul class="prevoir">
+                    <li>Objet 1</li>
+                    <li>Objet 2</li>
+                    <li>Objet 3</li>
+                    <li>Objet 4</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activités du soir -->
+    <!-- Les activités du soir ont le même code html et css que equipe -->
+
+    <section id="equipe">
+        <div class="haut">
+            <hr width="100%" color="black">
+            <h1>Activités du soir</h1>
+            <p>Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Et tortor consequat id porta nibh venenatis cras sed. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Et tortor consequat id porta nibh venenatis cras sed.</p>
+        </div>
+        <div class="bas">
+            <div class="animateur">
+                <img src="intelliguide.jpg" width="20%">
+                <h4>[Nom de l'activité]</h4>
+                <hr width="75%" color="black">
+                <p class="fonction">[Animateur référent]</p>
+                <p>Cursus vitae congue mauris rhoncus aenean vel elit scelerisque.</p>
+            </div>
+            <div class="animateur">
+                <img src="intelliguide.jpg" width="20%">
+                <h4>[Nom de l'activité]</h4>
+                <hr width="75%" color="black">
+                <p class="fonction">[Animateur référent]</p>
+                <p>Cursus vitae congue mauris rhoncus aenean vel elit scelerisque.</p>
+            </div>
+            <div class="animateur">
+                <img src="intelliguide.jpg" width="20%">
+                <h4>[Nom de l'activité]</h4>
+                <hr width="75%" color="black">
+                <p class="fonction">[Animateur référent]</p>
+                <p>Cursus vitae congue mauris rhoncus aenean vel elit scelerisque.</p>
+            </div>
+            <div class="animateur">
+                <img src="intelliguide.jpg" width="20%">
+                <h4>[Nom de l'activité]</h4>
+                <hr width="75%" color="black">
+                <p class="fonction">[Animateur référent]</p>
+                <p>Cursus vitae congue mauris rhoncus aenean vel elit scelerisque.</p>
+            </div>
+            <div class="animateur">
+                <img src="intelliguide.jpg" width="20%">
+                <h4>[Nom de l'activité]</h4>
+                <hr width="75%" color="black">
+                <p class="fonction">[Animateur référent]</p>
+                <p>Cursus vitae congue mauris rhoncus aenean vel elit scelerisque.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer_contenue">
+            <hr width="100%" color="whitesmoke">
+            <div class="logo_footer">
+                <h1><span>[nom de</span> l'école]</h1>
+            </div>
+            <div class="contact">
+                <h4>Contact 📞</h4>
+                <p>[nom du directeur]: [tel] <br>[mail]</p>
+                <p>[nom de l'adjoint: [tel] <br>[mail]</p>
+            </div>
+            <div class="horaire">
+                <h4>Horaires 🕐</h4>
+                <ul class="garderie">
+                    <li>Lun [horaire]</li>
+                    <li>Mar [horaire]</li>
+                    <li>Mer [horaire]</li>
+                    <li>Jeu [horaire]</li>
+                    <li>Ven [horaire]</li>
+                </ul>
+            </div>
+            <div class="adress">
+                <h4>Adresse 🗺️</h4>
+                <p>[adresse de l'école]</p>
+            </div>
+        </div>
+        <p class="auteur">Ce site a été réalisé par l'animateur Alexandre-Philippe PEREZ</p>
+    </footer>
+
+</body>

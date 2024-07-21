@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ecole.css">
+    <script src="blog.js"></script>
+    <title>Ecole</title>
+
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            font-family: "Grandstander", sans-serif;
+            margin: 0;
+            padding: 5% 15%;
+        }
+        #new-post {
+            margin-top: 0%;
+            margin-bottom: 2%;
+        }
+        #new-post h2, #posts h2 {
+            font-size: 30px;
+            text-decoration: underline;
+        }
+        #post-form {
+            display: flex;
+            flex-direction: column;
+        }
+        #post-form input,
+        #post-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #post-form button {
+            padding: 10px;
+            background: #f5d776;
+            font-family: "Grandstander", sans-serif;
+            font-weight: bold;
+            font-size: medium;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        #post-form button:hover {
+            color: #f5d776;
+            background-color: #000;
+        }
+        #posts {
+            margin-top: 30px;
+        }
+        .post {
+            border: 2px solid #000;
+            background-color: whitesmoke;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .post h3 {
+            margin-top: 0;
+        }
+    </style>
+
+    <!-- Police d'écriture -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Noto+Sans+HK:wght@100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+HK:wght@100..900&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1><span>[nom de</span> l'école]</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="ecole.html">Acceuil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="left">
+            <h4>Une idée?</h4>
+            <h1>Venez l'exprimer sur notre blog</h1>
+            <p>Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Et tortor consequat id porta nibh venenatis cras sed</p>
+            <button><a href="#new-post">Voir d'avantage</a></button>
+        </div>
+        <div class="right">
+            <img src="intelliguide.jpg" class="image1">
+        </div>
+    </section>
+
+    <main>
+        <section id="new-post">
+            <h2>Ajouter une nouvelle idée</h2>
+            <form id="post-form">
+                <input type="text" id="post-title" placeholder="Nom et Prénom" required>
+                <textarea id="post-content" placeholder="Contenu de l'idée..." required></textarea>
+                <button type="submit">Publier</button>
+            </form>
+        </section>
+        
+        <section id="posts">
+            <h2>Idées récentes</h2>
+            <div id="post-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_contenue">
+            <hr width="100%" color="whitesmoke">
+            <div class="logo_footer">
+                <h1><span>[nom de</span> l'école]</h1>
+            </div>
+            <div class="contact">
+                <h4>Contact 📞</h4>
+                <p>[nom du directeur]: [tel] <br>[mail]</p>
+                <p>[nom de l'adjoint: [tel] <br>[mail]</p>
+            </div>
+            <div class="horaire">
+                <h4>Horaires 🕐</h4>
+                <ul class="garderie">
+                    <li>Lun [horaire]</li>
+                    <li>Mar [horaire]</li>
+                    <li>Mer [horaire]</li>
+                    <li>Jeu [horaire]</li>
+                    <li>Ven [horaire]</li>
+                </ul>
+            </div>
+            <div class="adress">
+                <h4>Adresse 🗺️</h4>
+                <p>[adresse de l'école]</p>
+            </div>
+        </div>
+        <p class="auteur">Ce site a été réalisé par l'animateur Alexandre-Philippe PEREZ</p>
+    </footer>
+
+</body>
